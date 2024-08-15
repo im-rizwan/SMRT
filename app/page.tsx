@@ -1,7 +1,13 @@
+"use client";
 import {Button} from "@/components/ui/button"
 import {LoginButton} from "@/components/auth/login-button"
+import getFormData from "@/actions/getFormData";
 
 export default function Home() {
+  const sendFormData = async () => {
+    const data = "data";
+    getFormData(data);
+  }
   return (
     <>
     
@@ -22,7 +28,9 @@ export default function Home() {
 
         
       </div>
-
+      <button onClick={()=>{sendFormData()}}>
+      form call
+    </button>
     </main>
     </>
   );
