@@ -72,3 +72,16 @@ body,
     @apply bg-background text-foreground;
   }
 }
+
+/* Add this to your global CSS file */
+.embla {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+}
+
+.embla__slide {
+  min-width: 100%;
+}
