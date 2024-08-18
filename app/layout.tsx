@@ -20,12 +20,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="relative">
+        <div className="relative pb-16">
           <NavMenu /> {/* Render the NavMenu component */}
 
         </div>
-       
+        <main className="pt-[25px]">
         {children}
+
+        </main>
+       
+       
       </body>
     </html>
   );

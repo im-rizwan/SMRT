@@ -91,16 +91,15 @@ const Home: React.FC = () => {
                     alt="Commercial Designing"
                     width={100}
                     height={100}
-                    className="rounded-full"
                   />
                   <h2 className="font-bold text-lg lg:text-xl">
-                    Commercial Designing
+                    Commercial interior design
                   </h2>
                   <p className="font-light text-[14px] lg:text-[15px]">
-                    Describe the service and how customers or clients can
-                    benefit from it. It’s an opportunity to add a short
-                    description with relevant details, like pricing, duration
-                    and how to book.
+                    Transform your workspace with our Commercial Interior Design
+                    service. We tailor designs to fit your brand and business
+                    needs, creating stylish, efficient environments. Contact us
+                    for a consultation and quote.
                   </p>
                 </div>
               </div>
@@ -108,20 +107,20 @@ const Home: React.FC = () => {
               <div className="w-full lg:w-[50%]">
                 <div className="p-5 lg:p-8 space-y-2">
                   <Image
-                    src="/images/commercialIcon.png"
-                    alt="Commercial Designing"
+                    src="/images/resdentialicon.webp"
+                    alt="Residential Designing"
                     width={100}
                     height={100}
-                    className="rounded-full"
                   />
                   <h2 className="font-bold text-lg lg:text-xl">
-                    Commercial Designing
+                    Residential interior design
                   </h2>
                   <p className="font-light text-[14px] lg:text-[15px]">
-                    Describe the service and how customers or clients can
-                    benefit from it. It’s an opportunity to add a short
-                    description with relevant details, like pricing, duration
-                    and how to book.
+                    Our Residential Interior Design service turns your home into
+                    a stylish, comfortable space that reflects your personal
+                    taste. We customize designs to suit your lifestyle, from
+                    concept to completion. Get in touch for a consultation and
+                    personalized quote.
                   </p>
                 </div>
               </div>
@@ -131,20 +130,19 @@ const Home: React.FC = () => {
               <div className="w-full lg:w-[50%]">
                 <div className="p-5 lg:p-8 space-y-2">
                   <Image
-                    src="/images/commercialIcon.png"
-                    alt="Commercial Designing"
+                    src="/images/constructionIcon.png"
+                    alt="construction design"
                     width={100}
                     height={100}
-                    className="rounded-full"
                   />
-                  <h2 className="font-bold text-lg lg:text-xl">
-                    Commercial Designing
-                  </h2>
+                  <h2 className="font-bold text-lg lg:text-xl">Construction</h2>
                   <p className="font-light text-[14px] lg:text-[15px]">
-                    Describe the service and how customers or clients can
-                    benefit from it. It’s an opportunity to add a short
-                    description with relevant details, like pricing, duration
-                    and how to book.
+                    Our Construction service delivers high-quality builds
+                    tailored to your specifications. Whether it's a new project
+                    or a renovation, we manage everything from planning to
+                    completion. Benefit from our commitment to craftsmanship and
+                    timely delivery. Contact us for a consultation and detailed
+                    quote.
                   </p>
                 </div>
               </div>
@@ -152,20 +150,20 @@ const Home: React.FC = () => {
               <div className="w-full lg:w-[50%]">
                 <div className="p-5 lg:p-8 space-y-2">
                   <Image
-                    src="/images/commercialIcon.png"
-                    alt="Commercial Designing"
+                    src="/images/siteManagement.png"
+                    alt="sitemap"
                     width={100}
                     height={100}
-                    className="rounded-full"
                   />
                   <h2 className="font-bold text-lg lg:text-xl">
-                    Commercial Designing
+                    Site management
                   </h2>
                   <p className="font-light text-[14px] lg:text-[15px]">
-                    Describe the service and how customers or clients can
-                    benefit from it. It’s an opportunity to add a short
-                    description with relevant details, like pricing, duration
-                    and how to book.
+                    Our Site Management service ensures your construction
+                    project runs smoothly and efficiently. We oversee every
+                    detail, from scheduling to quality control, ensuring timely
+                    and cost-effective completion. Contact us to discuss your
+                    project and receive a tailored management plan and quote.
                   </p>
                 </div>
               </div>
