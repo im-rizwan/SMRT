@@ -1,8 +1,14 @@
 import React from 'react'
+import LeadsForm from '../Components/LeadsForm'
 
 const Contact = () => {
   return (
-    <div>contact page</div>
+    <>
+    <div>
+      <LeadsForm/>
+    </div>
+    
+    </>
   )
 }
 

@@ -4,6 +4,7 @@ import "./globals.css";
 
 
 import NavMenu from "./Components/Navbar"; // Adjust the import path as necessary
+import Footer from "./Components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,6 +29,8 @@ export default function RootLayout({
         {children}
 
         </main>
+
+        <Footer/>
        
        
       </body>

@@ -27,10 +27,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-800 p-4 fixed top-0 left-0 w-full z-50 shadow-md">
+    <nav className="bg-white p-4 fixed top-0 left-0 w-full z-50 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
-          <button onClick={toggleMenu} className="text-white focus:outline-none lg:hidden">
+          <button onClick={toggleMenu} className="text-black focus:outline-none lg:hidden">
             <svg
               className="w-6 h-6"
               fill="none"
@@ -46,7 +46,7 @@ const Navbar = () => {
               ></path>
             </svg>
           </button>
-          <Link href="/" className="text-white text-lg font-semibold hidden lg:block ml-4 lg:ml-0">
+          <Link href="/" className="text-black text-lg font-semibold hidden lg:block ml-4 lg:ml-0">
             <Image src='/images/logo.jpg' alt='SMRT logo' width={100} height={80} priority className='rounded-md'/>
           </Link>
         </div>
@@ -54,16 +54,16 @@ const Navbar = () => {
         {/* Desktop Menu Items */}
         <div className={`hidden lg:flex items-center space-x-4 flex-grow justify-center relative`}>
           <Link href="/">
-            <span className="text-white hover:text-gray-400">Home</span>
+            <span className="text-black hover:text-gray-400">Home</span>
           </Link>
           <Link href="/about">
-            <span className="text-white hover:text-gray-400">About</span>
+            <span className="text-black hover:text-gray-400">About Us</span>
           </Link>
           <Link href="/contact">
-            <span className="text-white hover:text-gray-400">Contact Us</span>
+            <span className="text-black hover:text-gray-400">Contact Us</span>
           </Link>
           <Link href="/construction">
-            <span className="text-white hover:text-gray-400">Construction</span>
+            <span className="text-black hover:text-gray-400">Construction</span>
           </Link>
 
           {/* Dropdown for Interiors */}
@@ -73,19 +73,19 @@ const Navbar = () => {
             onMouseLeave={handleMouseLeave}
             ref={dropdownRef}
           >
-            <span className="flex items-center text-white hover:text-gray-400 cursor-pointer">
+            <span className="flex items-center text-black hover:text-gray-400 cursor-pointer">
               Interiors
               <ChevronDownIcon className="w-4 h-4 ml-1" />
             </span>
             <div
-              className={`absolute top-full left-0 mt-2 bg-gray-800 text-white ${isDropdownOpen ? 'block' : 'hidden'} z-50`}
+              className={`absolute top-full left-0 mt-2 bg-white text-black ${isDropdownOpen ? 'block' : 'hidden'} z-50`}
               style={{ minWidth: '12rem' }}
             >
               <Link href="/residential">
-                <span className="block px-4 py-2 hover:bg-gray-700">Residential Interiors</span>
+                <span className="block px-4 py-2 hover:bg-gray-100">Residential Interiors</span>
               </Link>
               <Link href="/commercial">
-                <span className="block px-4 py-2 hover:bg-gray-700">Commercial Interiors</span>
+                <span className="block px-4 py-2 hover:bg-gray-100">Commercial Interiors</span>
               </Link>
             </div>
           </div>
@@ -93,19 +93,19 @@ const Navbar = () => {
 
         {/* Get Quotes Button for Desktop */}
         <Link href="/contact">
-          <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 hidden lg:block">
+          <button className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition-colors duration-300 hidden lg:block">
             Get Quotes
           </button>
         </Link>
       </div>
 
       {/* Mobile Menu Items */}
-      <div className={`lg:hidden fixed top-0 left-0 h-full w-64 bg-gray-800 transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out z-50`}>
+      <div className={`lg:hidden fixed top-0 left-0 h-full w-64 bg-white transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out z-50`}>
         <div className="flex justify-between items-center p-4">
-          <Link href="/" className="text-white text-lg font-semibold">
+          <Link href="/" className="text-black text-lg font-semibold">
             <Image src='/images/logo.jpg' alt='SMRT logo' width={100} height={80} priority className='rounded-md'/>
           </Link>
-          <button onClick={toggleMenu} className="text-white focus:outline-none">
+          <button onClick={toggleMenu} className="text-black focus:outline-none">
             <svg
               className="w-6 h-6"
               fill="none"
@@ -124,38 +124,40 @@ const Navbar = () => {
         </div>
         <div className="mt-4 space-y-2">
           <Link href="/">
-            <span className="block px-4 py-2 text-white bg-gray-800 hover:bg-gray-700">Home</span>
+            <span className="block px-4 py-2 text-black bg-white hover:bg-gray-100">Home</span>
           </Link>
           <Link href="/about">
-            <span className="block px-4 py-2 text-white bg-gray-800 hover:bg-gray-700">About</span>
+            <span className="block px-4 py-2 text-black bg-white hover:bg-gray-100">About</span>
           </Link>
           <Link href="/contact">
-            <span className="block px-4 py-2 text-white bg-gray-800 hover:bg-gray-700">Contact Us</span>
+            <span className="block px-4 py-2 text-black bg-white hover:bg-gray-100">Contact Us</span>
           </Link>
           <Link href="/construction">
-            <span className="block px-4 py-2 text-white bg-gray-800 hover:bg-gray-700">Construction</span>
+            <span className="block px-4 py-2 text-black bg-white hover:bg-gray-100">Construction</span>
           </Link>
           <div>
             <div
-              className="flex items-center justify-between px-4 py-2 text-white bg-gray-800 hover:bg-gray-700 cursor-pointer"
+              className="flex items-center justify-between px-4 py-2 text-black bg-white hover:bg-gray-100 cursor-pointer"
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
             >
               <span>Interiors</span>
               <ChevronDownIcon className={`w-4 h-4 ml-1 transform ${isDropdownOpen ? 'rotate-180' : 'rotate-0'}`} />
             </div>
             {isDropdownOpen && (
-              <div className="pl-4 bg-gray-800 z-50">
+              <div className="pl-4 bg-white z-50">
                 <Link href="/residential">
-                  <span className="block px-4 py-2 text-white hover:bg-gray-700">Residential Interiors</span>
+                  <span className="block px-4 py-2 text-black hover:bg-gray-100">Residential Interiors</span>
                 </Link>
                 <Link href="/commercial">
-                  <span className="block px-4 py-2 text-white hover:bg-gray-700">Commercial Interiors</span>
+                  <span className="block px-4 py-2 text-black hover:bg-gray-100">Commercial Interiors</span>
                 </Link>
               </div>
             )}
           </div>
           <Link href="/contact">
-            <button className="w-full bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Get Quotes</button>
+            <button className="w-[85%] bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition-colors duration-300 ml-5 mt-3 ">
+              Get Quotes
+            </button>
           </Link>
         </div>
       </div>

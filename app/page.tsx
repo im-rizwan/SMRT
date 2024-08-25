@@ -8,6 +8,7 @@ import imageabout from "../public/images/Heroimages/heroconst4.jpg";
 import { CarouselFull } from "./Components/CarouselFull";
 import { Button } from "@/components/ui/button";
 import { ProjectShowcase } from "./Components/ProjectShowcase";
+import OurClients from "./Components/OurClients";
 
 const Home: React.FC = () => {
   const sendFormData = async () => {
@@ -138,7 +139,7 @@ const Home: React.FC = () => {
                   <h2 className="font-bold text-lg lg:text-xl">Construction</h2>
                   <p className="font-light text-[14px] lg:text-[15px]">
                     Our Construction service delivers high-quality builds
-                    tailored to your specifications. Whether it's a new project
+                    tailored to your specifications. Whether it is a new project
                     or a renovation, we manage everything from planning to
                     completion. Benefit from our commitment to craftsmanship and
                     timely delivery. Contact us for a consultation and detailed
@@ -170,6 +171,8 @@ const Home: React.FC = () => {
             </div>
           </div>
         </div>
+
+        <OurClients/>
       </div>
     </>
   );
