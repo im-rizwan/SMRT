@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Column 1: Logo and Location */}
         <div className="flex flex-col items-center md:items-start space-y-4">
-          <Image src="/images/logo.jpg" alt="Company Logo" width={150} height={50} className='rounded-sm'/>
+          <Image src="/images/logo.jpg" alt="Company Logo" width={150} height={50}  className='rounded-sm'/>
           <p>Location: Chennai & Bengaluru</p>
         </div>
 

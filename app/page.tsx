@@ -10,6 +10,20 @@ import { Button } from "@/components/ui/button";
 import { ProjectShowcase } from "./Components/ProjectShowcase";
 import OurClients from "./Components/OurClients";
 
+
+const myProjectData = [
+  { title: "Project 1", imageUrl: "/images/Heroimages/hero1.jpg" },
+  { title: "Project 2", imageUrl: "/images/Heroimages/hero2.jpg" },
+  { title: "Project 3", imageUrl: "/images/Heroimages/hero3.jpg" },
+  { title: "Project 4", imageUrl: "/images/Heroimages/hero4.jpg" },
+  { title: "Project 5", imageUrl: "/images/Heroimages/hero1.jpg" },
+  { title: "Project 6", imageUrl: "/images/Heroimages/hero1.jpg" },
+  { title: "Project 7", imageUrl: "/images/Heroimages/hero2.jpg" },
+  { title: "Project 8", imageUrl: "/images/Heroimages/hero3.jpg" },
+  { title: "Project 9", imageUrl: "/images/Heroimages/hero4.jpg" },
+  { title: "Project 10", imageUrl: "/images/Heroimages/hero1.jpg" },
+];
+
 const Home: React.FC = () => {
   const sendFormData = async () => {
     const data = "data";
@@ -69,7 +83,7 @@ const Home: React.FC = () => {
             </div>
           </div>
 
-          <ProjectShowcase />
+          <ProjectShowcase projects={myProjectData} />
         </div>
 
         <div className="w-[95%] mx-auto flex flex-col lg:flex-row gap-6 my-4">
